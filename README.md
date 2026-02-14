@@ -64,7 +64,6 @@ src/
  ├── components/      # UI components
  ├── pages/           # Application pages
  ├── store/           # Redux store
- ├── hooks/           # Custom hooks
  └── App.jsx
 ```
 
