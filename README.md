@@ -1,32 +1,32 @@
-# React Blog App
+# 📝 React Blog App
 
-## Overview
+## 📌 Overview
 
-This React Blog App is a full-stack blogging web application built using React and Appwrite. It allows users to create, edit, delete, and view blog posts with authentication, image uploads, and rich text content support. The project was created to learn full-stack integration, authentication flow, and modern React application architecture.
+This **React Blog App** is a full-stack blogging web application built using React and Appwrite. It allows users to create, edit, delete, and view blog posts with authentication, image uploads, and rich text content support. The project was created to learn full-stack integration, authentication flow, and modern React application architecture.
 
 ---
 
-## Features
+## 🚀 Features
 
-### Authentication
+### 🔐 Authentication
 
 * User signup and login
 * Secure session management
 * Protected routes for authenticated users
 
-### Blog Management
+### 📝 Blog Management
 
 * Create, edit, and delete posts
 * Rich text content editor
 * Image upload support
 * Author identification on posts
 
-### Social Blog Functionality
+### 🌍 Social Blog Functionality
 
 * Users can view posts created by other users
 * Author name displayed with posts
 
-### UI/UX
+### 🎨 UI/UX
 
 * Responsive layout
 * Modern styling with Tailwind CSS
@@ -34,7 +34,7 @@ This React Blog App is a full-stack blogging web application built using React a
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
 
 ### Frontend
 
@@ -56,7 +56,7 @@ This React Blog App is a full-stack blogging web application built using React a
 
 ---
 
-## Project Structure (Simplified)
+## 📂 Project Structure (Simplified)
 
 ```
 src/
@@ -64,12 +64,13 @@ src/
  ├── components/      # UI components
  ├── pages/           # Application pages
  ├── store/           # Redux store
+ ├── hooks/           # Custom hooks
  └── App.jsx
 ```
 
 ---
 
-## Installation & Setup
+## ⚙️ Installation & Setup
 
 ### 1. Clone repository
 
@@ -104,7 +105,7 @@ npm run dev
 
 ---
 
-## Learning Outcomes
+## 🧠 Learning Outcomes
 
 This project helped me learn:
 
@@ -117,7 +118,7 @@ This project helped me learn:
 
 ---
 
-## Future Improvements
+## 🔮 Future Improvements
 
 * Comments and likes system
 * User profile pages
@@ -127,12 +128,12 @@ This project helped me learn:
 
 ---
 
-## Author
+## 👨‍💻 Author
 
 Rishav Verma
 
 ---
 
-## License
+## 📄 License
 
 This project is for educational and portfolio purposes.
