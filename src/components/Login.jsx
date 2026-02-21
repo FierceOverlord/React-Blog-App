@@ -5,6 +5,7 @@ import {login as authLogin} from '../store/authSlice'
 import { useDispatch } from 'react-redux'
 import {Link, useNavigate} from 'react-router-dom'
 import { useForm } from "react-hook-form";
+import { isPasswordExpired } from '../utils/PasswordPolicy'
 
 
 function Login() {
@@ -21,11 +22,22 @@ function Login() {
       if(session) {
         const userData = await authService.getCurrentUser()
 
-        if(userData) dispatch(authLogin(userData))
+        if(userData) {
+          dispatch(authLogin(userData))
+
+          if(isPasswordExpired(userData)) {
+            navigate("/change-password")
+            return
+          }
+        }
           navigate("/")
       }
     } catch (error) {
-      setError(error.message)
+      if(error.message === "Change your current password") {
+        navigate("/change-password")
+        return
+      }
+      setError(error.message);   
     }
   }
 

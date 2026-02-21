@@ -12,6 +12,7 @@ import Signup from "./Signup";
 import RTE from "./RTE";
 import PostForm from "./PostForm/PostForm";
 import AuthLayout from "./AuthLayout"
+import ChangePasswordComponent from "./ChangePasswordComponent";
 
 export {
     Header,
@@ -27,5 +28,6 @@ export {
     Signup,
     RTE,
     PostForm,
-    AuthLayout
+    AuthLayout,
+    ChangePasswordComponent
 }
