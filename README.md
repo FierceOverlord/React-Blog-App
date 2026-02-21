@@ -1,16 +1,138 @@
-# React + Vite
+# 📝 React Blog App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
 
-Currently, two official plugins are available:
+This **React Blog App** is a full-stack blogging web application built using React and Appwrite. It allows users to create, edit, delete, and view blog posts with authentication, image uploads, and rich text content support. The project was created to learn full-stack integration, authentication flow, and modern React application architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🔐 Authentication
 
-## Expanding the ESLint configuration
+* User signup and login
+* Secure session management
+* Protected routes for authenticated users
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📝 Blog Management
+
+* Create, edit, and delete posts
+* Rich text content editor
+* Image upload support
+* Author identification on posts
+
+### 🌍 Social Blog Functionality
+
+* Users can view posts created by other users
+* Author name displayed with posts
+
+### 🎨 UI/UX
+
+* Responsive layout
+* Modern styling with Tailwind CSS
+* Smooth navigation using React Router
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* React.js
+* React Router
+* Redux Toolkit
+* Tailwind CSS
+* React Hook Form
+
+### Backend / Services
+
+* Appwrite (Authentication, Database, Storage)
+
+### Other Tools
+
+* TinyMCE Rich Text Editor
+* Git & GitHub
+* VS Code
+
+---
+
+## 📂 Project Structure (Simplified)
+
+```
+src/
+ ├── appwrite/        # Backend service configs
+ ├── components/      # UI components
+ ├── pages/           # Application pages
+ ├── store/           # Redux store
+ └── App.jsx
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone repository
+
+```
+git clone <repository-url>
+cd blog-app
+```
+
+### 2. Install dependencies
+
+```
+npm install
+```
+
+### 3. Environment variables (.env)
+
+Add your backend configuration:
+
+```
+VITE_APPWRITE_URL=
+VITE_APPWRITE_PROJECT_ID=
+VITE_APPWRITE_DATABASE_ID=
+VITE_APPWRITE_COLLECTION_ID=
+VITE_APPWRITE_BUCKET_ID=
+```
+
+### 4. Start development server
+
+```
+npm run dev
+```
+
+---
+
+## 🧠 Learning Outcomes
+
+This project helped me learn:
+
+* Full-stack application integration
+* Authentication lifecycle management
+* File storage handling
+* Redux state management
+* React routing and protected routes
+* Debugging real production-like issues
+
+---
+
+## 🔮 Future Improvements
+
+* Comments and likes system
+* User profile pages
+* Follow/unfollow functionality
+* Notifications
+* Improved UI animations
+
+---
+
+## 👨‍💻 Author
+
+Rishav Verma
+
+---
+
+## 📄 License
+
+This project is for educational and portfolio purposes.
