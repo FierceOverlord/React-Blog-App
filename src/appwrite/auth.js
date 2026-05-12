@@ -1,7 +1,7 @@
 import conf from "../conf/conf";
 import { Client, Account, ID } from "appwrite";
 import profileService from "./profile";
-import userSecurityService from "./userSecurity";
+import adminControl from "./adminControl";
 
 
 export class AuthService {
@@ -32,7 +32,7 @@ export class AuthService {
 
                 console.log("Profile created");
 
-                await userSecurityService.createSecurity(userAccount.$id, userAccount.email);
+                await adminControl.createSecurity(userAccount.$id, userAccount.email);
 
                 console.log("Security created");
             
@@ -50,7 +50,7 @@ export class AuthService {
             
             const user = await this.account.get().catch(() => null);
 
-            const security = await userSecurityService.getSecurity(user.$id);
+            const security = await adminControl.getSecurity(user.$id);
 
             if (!security?.isApproved) {
                 await this.logout();
@@ -73,9 +73,9 @@ export class AuthService {
 
         const user = await this.account.get();
         
-        const security = await userSecurityService.getSecurity(user.$id)
+        const security = await adminControl.getSecurity(user.$id)
 
-        await userSecurityService.updateSecurity(security.$id);
+        await adminControl.updateSecurity(security.$id);
 
         return user
     }

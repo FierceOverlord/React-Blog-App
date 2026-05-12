@@ -14,6 +14,7 @@ import Post from './pages/Post.jsx'
 import Login from "./pages/Login.jsx"
 import Signup  from './pages/Signup.jsx'
 import ChangePassword from './pages/ChangePassword.jsx'
+import Profile from './pages/Profile.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -26,8 +27,10 @@ const router = createBrowserRouter(
       <Route path='/add-post' element={<AuthLayout authentication>{" "}<Addpost /></AuthLayout>} />
       <Route path='/edit-post/:slug' element={<AuthLayout authentication>{" "}<EditPost /></AuthLayout>} />
       <Route path='/post/:slug' element={<AuthLayout authentication>{" "}<Post /></AuthLayout>} />
+      <Route path='/profile' element={<AuthLayout authentication>{" "}<Profile /></AuthLayout>} />
     </Route>
-  )
+  ),
+  { basename: "/React-Blog-App" }
 )
 
 createRoot(document.getElementById('root')).render(

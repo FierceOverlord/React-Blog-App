@@ -13,6 +13,7 @@ import RTE from "./RTE";
 import PostForm from "./PostForm/PostForm";
 import AuthLayout from "./AuthLayout"
 import ChangePasswordComponent from "./ChangePasswordComponent";
+import AdminDashboardComponent from "./AdminDashboardComponent";
 
 export {
     Header,
@@ -29,5 +30,6 @@ export {
     RTE,
     PostForm,
     AuthLayout,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    AdminDashboardComponent
 }
