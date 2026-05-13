@@ -29,8 +29,7 @@ const router = createBrowserRouter(
       <Route path='/post/:slug' element={<AuthLayout authentication>{" "}<Post /></AuthLayout>} />
       <Route path='/profile' element={<AuthLayout authentication>{" "}<Profile /></AuthLayout>} />
     </Route>
-  ),
-  { basename: "/React-Blog-App" }
+  )
 )
 
 createRoot(document.getElementById('root')).render(
